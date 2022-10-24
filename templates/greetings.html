@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block title %}Greetings{% endblock %}
+
+{% block navbar %}Flask - Prometheus Example{% endblock %}
+
+{% block content %}
+<p>Hi {{ info['name'] }}</p>
+<p>{{ info['time'] }}</p>
+{% endblock %}
