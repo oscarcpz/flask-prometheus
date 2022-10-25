@@ -8,6 +8,14 @@ $ conda activate flask-prometheus
 $ pip install -r requirements.txt
 ~~~
 
+## Run using docker-compose
+
+Ensure ".env" file exists and contains "SRC_PATH" variable
+~~~
+$ cd docker
+$ docker-compose up
+~~~
+
 ## Usage
 
 ### In browser
@@ -16,6 +24,8 @@ $ pip install -r requirements.txt
 * http://localhost:5050/greetings/johnwick
 * http://localhost:5050/greetings/johnwick/json
 * http://localhost:5050/metrics
+* http://localhost:9090 - prometheus
+* http://localhost:3000 - grafana
 
 ## References
 
